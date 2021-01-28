@@ -5,19 +5,21 @@
 }
 
 body {
-    background-color: #d9dcd6; /** background color of entire page **/
+    background-color: #d9dcd6; /** background color of entire page; grey **/
 }
+
 
 /** classes located in <nav> of index.html **/
+
 .header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c; /** blue **/
-    color: #ffffff;
+    padding: 20px; /**padding thickness of 20 pixels at top and bottom **/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /**class will use the font first available to a user browsing paged based off this list **/
+    background-color: #2a607c; /** blue background **/
+    color: #ffffff; /**white font **/
 }
 
-.header h1 {
-    display: inline-block;
+.header h1 { /**elements in the h1 tag of the header display inline and with a 48px font size **/
+    display: inline-block; /**displayed as an inline block container **/
     font-size: 48px;
 }
 
@@ -25,11 +27,11 @@ body {
     color: #d9dcd6; /** grey **/
 }
 
-.header div {
+.header div { /**div elements in the header have a top padding of 15 pixels, right margin of 20 pixels, float to the right, and have a font size of 20px **/
     padding-top: 15px;
     margin-right: 20px;
     float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /**class will use the font first available to a user browsing paged based off this list **/
     font-size: 20px;
 }
 
@@ -37,17 +39,18 @@ body {
     list-style-type: none;
 }
 
-.header div ul li {
+.header div ul li { /** li elements within div header tags display inline-block with a left margin of 25px**/
     display: inline-block;
     margin-left: 25px;
 }
 
-a {
+a { /** alll elements with an a tag will be white with NO text decoration**/
     color: #ffffff;
     text-decoration: none;
 }
 
-/** Primary image on page below <nav> and above <main>**/
+/** sets parameters for "background" of page, located below <nav> and above <main>*
+    -puts a 25 pixel margin at bottom of image set as background, which is centered and covers available space of viewport (up to a height of 800px) **/
 .hero { 
     height: 800px;
     width: 100%;
@@ -64,90 +67,93 @@ a {
     margin-left: 20px;
 }
 
-.float-left {
-    float: left;
+.float-left {        /**makes the element float to the left of the page with a right-margin of 25 pixels **/
+    float: left;  
     margin-right: 25px;
 }
 
-.float-right {
+.float-right {      /**makes the element float to the right of the page with a left-margin of 25 pixels **/
     float: right;
     margin-left: 25px;
 }
 
 p {
-    font-size: 16px;
+    font-size: 16px; /** font size for all items in p tag **/
 }
 
-/** Classes below affect the <sections> within <main> of index.html **/
-.search-engine-optimization, /** Consolidated code for similar classes **/
+
+/** Classes below affect the <sections> within <main> of index.html
+    consolidated class code since they were the same parameters **/
+   
+.search-engine-optimization,
 .online-reputation-management,
 .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
+    margin-bottom: 20px;    /**sets a 20pixel margin at bottom of each class section, **/
+    padding: 50px;          /**padding thickness of 50 pixels at top and bottom, **/
+    height: 300px;          /** height of 300 pixels **/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /**class will use the font first available to a user browsing paged based off this list **/
+    background-color: #0072bb;  /** blue background **/
+    color: #ffffff;         /**white text **/
 }
 
-.search-engine-optimization img, /** Consolidated code for similar classes **/
+.search-engine-optimization img,    /** Consolidated code for similar classes **/
 .online-reputation-management img,
 .social-media-marketing img {
     max-height: 200px;
 }
 
 
-.search-engine-optimization h2, /** Consolidated code for similar classes **/
+.search-engine-optimization h2,     /** Consolidated code for similar classes **/
 .online-reputation-management h2,
 .social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
+    margin-bottom: 20px;           /**sets a 20 pixel margin at bottom of each header section **/
+    font-size: 36px;             /** font size 36 **/
 }
 
 /** Classes below used in <aside> of index.html **/
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
-    clear: both;
-    float: right;
-    width: 20%;
-    height: 100%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #2589bd;
+    margin-right: 20px;         /** right margin of 20px **/
+    padding: 20px;      /** padding of 20 px on top and bottom**/
+    clear: both;        /** cleared so floating objects won't be adjacent**/
+    float: right;       /** floats class to the right**/
+    width: 20%;          /**width takes up 20% of the content area **/
+    height: 100%;       /** height uses all of content area**/
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    background-color: #2589bd;      /**blue background **/
 }
 
 .benefit-lead, /** Consolidated code for similar classes **/
 .benefit-brand,
 .benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+    margin-bottom: 32px;    /** bottom margin of 32px**/
+    color: #ffffff;     /**  white font**/
 }
 
 .benefit-lead h3,  /** Consolidated code for similar classes **/
 .benefit-brand h3,
 .benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 10px; /**bottom margin of 10px **/
+    text-align: center; /**text is aligned to the center of content area **/
 }
 
 
 .benefit-lead img,  /** Consolidated code for similar classes **/
 .benefit-brand img,
 .benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+    display: block;     /**displayed as a block **/
+    margin: 10px auto; /** 10px top and bottom margin, side margins auto selected **/
+    max-width: 150px;   /** width can be no greater than 150px**/
 }
 
 
 /** Footer classes **/
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    padding: 30px; /** 30px padding on top**/
+    clear: both; /**clears any floating objects that may be adjacent **/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; /**class will use the font first available to a user browsing paged based off this list **/
+    text-align: center; /** text in content area is aligned center **/
 }
 
 .footer h2 {
-    font-size: 20px;
+    font-size: 20px; /**font size for h2 header in footer is 20px **/
 }
