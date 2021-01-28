@@ -23,11 +23,14 @@ I left comments throughout CSS file
 
 
 My Github repository can be found at  https://github.com/bdcii/BCS_Homework_1
+
+
 My Github site is published at https://bdcii.github.io/BCS_Homework_1/
 
 
+# What does the page look like?
 For reference, the Horiseon page can be viewed here:
-<img src="Develop/01-html-css-git-homework-demo.png"/>
+<img src="01-html-css-git-homework-demo.png"/>
 
 
 # Thank You!!!
